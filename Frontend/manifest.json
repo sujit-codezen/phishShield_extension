@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "PhishShield",
+  "version": "1.0",
+  "description": "PhishShield protects you from phishing, scam, and malicious websites using real-time AI and Google Safe Browsing detection.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting",
+    "notifications",
+    "webNavigation"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
